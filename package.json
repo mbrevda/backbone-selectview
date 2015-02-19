@@ -1,0 +1,52 @@
+{
+  "name": "backbone-selectview",
+  "version": "0.0.1",
+  "description": "A Backbone.js View for creating sortable/filterable/pageable select elements, including child lifecycle management. Built on top of backbone-collectionview",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mbrevda/backbone-selectview.git"
+  },
+  "keywords": [
+    "backbone",
+    "collection",
+    "view",
+    "backbone",
+    "view",
+    "backbone",
+    "collection",
+    "child",
+    "children",
+    "select"
+  ],
+  "author": "Moshe Brevda mbrevda@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbrevda/backbone-selectview/issues"
+  },
+  "homepage": "https://github.com/mbrevda/backbone-selectview",
+  "dependencies": {
+    "backbone": "^1",
+    "backbone-collectionview": "^0",
+    "jquery": "^2",
+    "underscore": "^1"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.3",
+    "gulp": "^3",
+    "gulp-coverage": "^0.3.34",
+    "gulp-if": "^1.2.5",
+    "gulp-jshint": "^1.9.2",
+    "gulp-mocha": "^2.0.0",
+    "gulp-util": "^3.0.3",
+    "jsdom": "^3",
+    "minimist": "^1.1.0",
+    "mocha": "^2",
+    "should": "^5",
+    "through2": "^0.6.3",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}
