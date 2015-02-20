@@ -61,5 +61,5 @@ note: `view.setCollection(collection)` can also be called to (re)set the views c
 ## Filtering/Sorting/Pagination
 
 SelectView has built in support for filtering the collection data appended to the view.
-Please see the [backbone-collection](https://github.com/mbrevda/backbone-collectionview)
+Please see [backbone-collection](https://github.com/mbrevda/backbone-collectionview#filtering--sorting)
 for the full api
