@@ -30,7 +30,7 @@ describe('View', function(){
 
         this.view.$el.children().val().should.equal('foo')
     })
-    
+
     it('addOption() val when blank', function(){
         var m = new Backbone.Model({name: 'bar'})
         this.view.addOption(m)
@@ -38,19 +38,29 @@ describe('View', function(){
         this.view.$el.children().val().should.equal(m.cid)
     })
 
-    it('colleciton should auto populate', function(){
+    it('setCollection()', function(){
         this.view.setCollection(this.collection)
-        
+
         this.view.$el.children().eq(0).text().should.equal('bar0')
         this.view.$el.children().eq(1).text().should.equal('bar1')
         this.view.$el.children().eq(2).text().should.equal('bar2')
     })
-    
+
+	it('collection should auto populate when passed on construct', function(){
+		var view = new View({
+			collection: this.collection
+		})
+
+		view.$el.children().eq(0).text().should.equal('bar0')
+		view.$el.children().eq(1).text().should.equal('bar1')
+		view.$el.children().eq(2).text().should.equal('bar2')
+	})
+
     it('filter', function(){
         this.view.setCollection(this.collection)
         this.view.addFilter('foo', function(model) {
-            return model.get('name') !== 'bar2'    
-        })  
+            return model.get('name') !== 'bar2'
+        })
 
         this.view.$el.children().should.have.lengthOf(2)
     })
